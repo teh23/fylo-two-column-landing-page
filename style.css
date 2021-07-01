@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root {
+    --primary-dark-blue: hsl(243, 87%, 12%);
+    --primary-blue: hsl(238, 22%, 44%);
+    --accent-blue: hsl(224, 93%, 58%);
+    --accent-cyan: hsl(170, 45%, 43%);
+    --neutral-blue-grey: hsl(240, 75%, 98%);
+    --neutral-grey: hsl(0, 0%, 75%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* mobile 375, desktop: 1440px */
