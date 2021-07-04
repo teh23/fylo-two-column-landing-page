@@ -15,7 +15,6 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    background-color: var(--neutral-blue-grey);
 }
 ul {
     list-style: none;
@@ -32,6 +31,9 @@ h1 {
     line-height: 1.5;
     font-size: 1.5em;
 }
+article {
+    margin-top: 5em;
+}
 .btn {
     background-color: var(--accent-blue);
     color: white;
@@ -40,6 +42,16 @@ h1 {
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    /* text-shadow: 1px 1px 0px rgba(255, 255, 0, 0.3); */
+}
+.input {
+    border: solid 1px black;
+    width: 40px;
+    font-size: 12px;
+    padding: 1em 1.5em;
+}
+::placeholder {
+    color: var(--neutral-grey);
 }
 
 .flex {
@@ -89,4 +101,245 @@ header {
 .hero-form > * {
     width: 100%;
     margin: 0.5em 0;
+}
+.recommend {
+    background-image: url("/images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400% 100%;
+    padding-top: 7em;
+}
+.recommend > div > .info > h1 {
+    /*  only on mobile */
+    font-size: 16px;
+}
+.recommend > div > .info > p {
+    text-align: left;
+    opacity: 0.6;
+}
+.link-fylo {
+    display: inline-flex;
+    justify-content: space-between;
+
+    color: var(--accent-cyan);
+    font-size: 12px;
+    border-bottom: 1px solid var(--accent-cyan);
+}
+.link-fylo-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+.paper {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin: 0 1em;
+}
+.quotes {
+    width: 12px;
+    height: 12px;
+}
+.paper-text {
+    font-size: 0.75em;
+    font-weight: 300;
+}
+.user {
+    display: flex;
+
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+h3 {
+    font-weight: 700;
+}
+.user > * {
+    margin: 1em 0.2em;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: left;
+}
+.user-info-name {
+    font-size: 12px;
+    text-align: left;
+}
+.user-info-work {
+    font-size: 10px;
+    text-align: left;
+}
+.mail {
+    background-color: var(--primary-blue);
+    color: hsla(0, 0%, 100%, 0.9);
+    padding: 2em;
+    line-height: 1.5;
+}
+.info > h2 {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+.mail-form {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 10px 2em;
+}
+.mail-form > * {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 10px;
+    border: none;
+}
+footer {
+    background-color: var(--primary-dark-blue);
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+}
+footer > * {
+    padding: 2em 1em;
+    margin: 0;
+}
+.footer-logo {
+    margin: 2em 0;
+    width: 50%;
+    fill: #fff;
+}
+
+footer-left > * {
+    margin: 5em 0;
+}
+.footer-info > * {
+    margin: 1em 0;
+}
+.footer-menu {
+}
+.footer-menu > li > a {
+    color: white;
+    font-weight: 300;
+}
+.footer-menu > li {
+    margin-bottom: 1em;
+}
+.footer-menu > li:nth-child(5) {
+    margin-top: 3em;
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav {
+        margin-right: 0;
+    }
+    .logo-container {
+        margin-left: 0;
+    }
+    .container {
+        padding: 0 5em;
+    }
+
+    .flex {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .info > h1 {
+        text-align: left;
+        font-size: 2em;
+    }
+    .info > p {
+        text-align: left;
+        font-size: 1em;
+        padding: 0;
+    }
+    .img-container {
+        width: 100%;
+    }
+
+    .img-main {
+        width: 90%;
+    }
+    .img-container {
+        padding-left: 5em;
+    }
+    .hero-form {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .hero-form > .input {
+        width: 59%;
+    }
+    .hero-form > .btn {
+        width: 39%;
+    }
+    .recommend {
+        background-image: url("images/bg-curve-desktop.svg");
+
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 400% 100%;
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+
+    .link-fylo {
+        margin: 0;
+    }
+    .paper {
+        margin: 0;
+        width: 60%;
+    }
+    .recommend > div > .info > h1 {
+        font-size: 2em;
+    }
+    .mail {
+        display: flex;
+        margin: 0;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .mail > * {
+        width: 50%;
+    }
+    .info > h2 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 2em;
+        text-align: left;
+    }
+    .mail > .info {
+        width: 50%;
+    }
+    .mail .info p {
+        padding-right: 25%;
+    }
+    .mail-form {
+        padding-left: 20%;
+    }
+    .mail-form .btn {
+        margin: 0;
+        width: 25%;
+    }
+    .mail-form .input {
+        height: 40px;
+    }
+    footer {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .footer-menu {
+        padding-top: 5em;
+        columns: 2;
+    }
+    .footer-center {
+        padding: auto;
+    }
 }
